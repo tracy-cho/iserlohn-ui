@@ -1,0 +1,31 @@
+.Shadow {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    &:before {
+        content: ' ';
+        background-image: radial-gradient(black 30%, transparent 20%);
+        background-position: 0 0, 10px 10px;
+        background-size: 2px 4px;
+        position: absolute;
+        width: 16px;
+        height: 100%;
+        top: 8px;
+        right: -16px;
+        transform: skewY(45deg);
+    }
+
+    &:after {
+        content: ' ';
+        background-image: radial-gradient(black 30%, transparent 20%);
+        background-position: 0 0, 10px 10px;
+        background-size: 4px 2px;
+        position: absolute;
+        width: 100%;
+        height: 16px;
+        left: 8px;
+        bottom: -16px;
+        transform: skewX(45deg);
+    }
+}
