@@ -1,0 +1,51 @@
+.Checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    user-select: none;
+    opacity: 0;
+}
+
+.check {
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+    width: 8px;
+    height: 8px;
+    box-shadow: inset -1px -1px 0 0 var(--black),
+    1px 1px 0 0 var(--black),
+    -1px -1px 0 0 var(--white);
+}
+
+.input:checked + .check {
+    background-color: red;
+    box-shadow: inset 1px 1px 0 0 var(--black),
+    inset -1px -1px 0 0 var(--white),
+    1px 1px 0 0 var(--black),
+    -1px -1px 0 0 var(--white);
+}
+
+.input:disabled {
+    + .check {
+        background-color: lightgray;
+        background-image: radial-gradient(black 10%, transparent 20%);
+        background-size: 3px 3px;
+        background-position: 2px 1px;
+        box-shadow: inset 1px 1px 0 0 var(--black),
+        1px 1px 0 0 var(--black),
+        -1px -1px 0 0 var(--white);
+
+        + .span {
+            color: gray;
+        }
+    }
+}
