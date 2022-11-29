@@ -9,12 +9,34 @@
     font-family: 'HBIOS-SYS', sans-serif;
 }
 
+:root {
+    --background: #415161;
+    --black: #111111;
+    --white: #eeeeee;
+}
+
 .Button {
     border-width: 2px;
     border-style: solid;
-    border-color: white black black white;
-    color: white;
-    background-color: #415161;
-    text-shadow: 0 0 1px black;
+    border-color: var(--white) var(--black) var(--black) var(--white);
+    color: var(--white);
+    background-color: var(--background);
+    text-shadow: 0 0 1px var(--black);
     cursor: pointer;
+    box-shadow: inset 1px 1px 0 0 var(--white), inset -1px -1px 0 0 var(--black);
+
+
+    &:active:enabled {
+        border-color: var(--black) var(--white) var(--white) var(--black);
+        box-shadow: inset 1px 1px 0 0 var(--black), inset -1px -1px 0 0 var(--white);
+        text-shadow: none;
+        transform: translateY(1px);
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        color: #4f575e;
+        background-color: #697785;
+        text-shadow: 1px 1px 0 #eeeeee;
+    }
 }
