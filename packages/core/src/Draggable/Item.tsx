@@ -1,22 +1,25 @@
-import React, {ComponentProps} from "react";
+import React, {ComponentProps, ReactNode} from "react";
 import classNames from "classnames/bind";
 
 import styles from "./Item.module.scss";
 
-export type ItemProps = ComponentProps<"input"> & {};
+export type ItemProps = Omit<ComponentProps<"input">, "className"> & {
+    __dangerouslySetClassName?: string;
+    children: ReactNode
+};
 
 const cx = classNames.bind(styles);
 
-function Item({...props}: ItemProps) {
-
+function Item({children, ...props}: ItemProps) {
     return (
         <div
             draggable
+            className={cx('Item', props.__dangerouslySetClassName)}
             {...props}
         >
-            aaaaaaaaaaaaaaaaaaaa
+            {children}
         </div>
     );
 }
 
-export {Item};
+export default Item;

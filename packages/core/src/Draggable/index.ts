@@ -1,5 +1,5 @@
-import {Container} from "./Container";
-import {Item} from "./Item";
+import Container from "./Container";
+import Item from "./Item";
 
 const Draggable = {
     Container,
