@@ -2,9 +2,9 @@ import Container from "./Container";
 import Item from "./Item";
 
 const Draggable = {
-    Container,
-    Item
-}
+	Container,
+	Item
+};
 
 // export {Container as Draggable, type ContainerProps} from "./Container";
 
