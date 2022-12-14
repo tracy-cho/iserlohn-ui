@@ -9,8 +9,18 @@ export type OptionProps = {};
 
 const cx = classNames.bind(styles);
 
-function Option({ children }: commonPropsWithChildren<"input">) {
-	return <div className={cx("Option")}>{children}</div>;
+function Option({
+	value,
+	name,
+	type,
+	children
+}: commonPropsWithChildren<"input">) {
+	return (
+		<label className={cx("Option")}>
+			<input type={type} value={value} name={name} />
+			{children}
+		</label>
+	);
 }
 
 export default Option;

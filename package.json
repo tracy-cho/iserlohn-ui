@@ -15,6 +15,7 @@
     "eslint": "^8.15.0",
     "eslint-config-iserlohn": "workspace:*",
     "prettier": "^2.5.1",
+    "eslint-config-prettier": "^8.5.0",
     "turbo": "latest"
   },
   "packageManager": "pnpm@7.15.0"

@@ -1,0 +1,17 @@
+{
+  "semi": true,
+  "tabWidth": 2,
+  "useTabs": true,
+  "jsxBracketSameLine": true,
+  "trailingComma": "none",
+  "overrides": [
+    {
+      "files": [
+        "*.html"
+      ],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}

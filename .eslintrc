@@ -1,0 +1,81 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "react-app",
+    "react-app/jest"
+  ],
+  "ignorePatterns": [
+    "build",
+    "dist",
+    "public"
+  ],
+  "rules": {
+    "printWidth": 120,
+    "arrow-spacing": "error",
+    "brace-style": [
+      "error"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "after": true,
+        "before": false
+      }
+    ],
+    "computed-property-spacing": [
+      "error",
+      "never"
+    ],
+    "indent": [
+      "warn",
+      2,
+      {
+        "flatTernaryExpressions": false,
+        "ImportDeclaration": 1,
+        "MemberExpression": 1,
+        "ObjectExpression": 1,
+        "offsetTernaryExpressions": false,
+        "VariableDeclarator": 2
+      }
+    ],
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
+    "no-whitespace-before-property": "error",
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "object-shorthand": [
+      "error",
+      "always",
+      {
+        "avoidQuotes": true
+      }
+    ],
+    "semi": [
+      1,
+      "always"
+    ],
+    "space-before-blocks": [
+      "error",
+      {
+        "classes": "always",
+        "functions": "always",
+        "keywords": "never"
+      }
+    ],
+    "space-in-parens": [
+      "error",
+      "never"
+    ]
+  }
+}

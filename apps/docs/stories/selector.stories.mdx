@@ -18,9 +18,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl ege
     <Selector.Container>
       <Selector.Trigger>트리거</Selector.Trigger>
       <div>
-        <Selector.Option>옵션1</Selector.Option>
-        <Selector.Option>옵션2</Selector.Option>
-        <Selector.Option>옵션3</Selector.Option>
+        <Selector.Option type={'radio'} value={1} name={"name"}>옵션1</Selector.Option>
+        <Selector.Option type={'radio'} value={"2"} name={"name"}>옵션2</Selector.Option>
+        <Selector.Option type={'radio'} value={"true"} name={"name"}>옵션3</Selector.Option>
+        <Selector.Option type={'radio'} value={1} name={"name2"}>옵션1</Selector.Option>
+        <Selector.Option type={'radio'} value={"2"} name={"name2"}>옵션2</Selector.Option>
+        <Selector.Option type={'radio'} value={"true"} name={"name2"}>옵션3</Selector.Option>
+        <Selector.Option type={'checkbox'} value={"check=true"} name={"name3"}>옵션3</Selector.Option>
+        <Selector.Option type={'checkbox'} value={"check=true222"} name={"name3"}>옵션3</Selector.Option>
+        <Selector.Option type={'checkbox'} value={"check=true333"} name={"name3"}>옵션3</Selector.Option>
       </div>
     </Selector.Container>
   </Story>
