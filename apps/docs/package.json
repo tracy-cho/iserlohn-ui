@@ -9,7 +9,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@iserlohn-ui/core": "workspace:*",
+    "@iserlohn-ui/react": "workspace:*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

@@ -10,13 +10,19 @@
     "version-packages": "changeset version",
     "release": "turbo run build --filter=docs^... && changeset publish"
   },
+  "dependencies": {
+    "typescript": "^4.9.4",
+    "vite": "^4.0.3"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.22.0",
     "eslint": "^8.15.0",
     "eslint-config-iserlohn": "workspace:*",
     "prettier": "^2.5.1",
     "eslint-config-prettier": "^8.5.0",
-    "turbo": "latest"
+    "turbo": "latest",
+    "classnames": "^2.3.2",
+    "sass": "^1.56.1"
   },
   "packageManager": "pnpm@7.15.0"
 }

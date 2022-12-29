@@ -1,7 +1,7 @@
 import React, { ChangeEvent } from "react";
 import classNames from "classnames/bind";
 
-import { useSelector } from "./useSelector";
+// import { useSelector } from "./useSelector";
 
 import { commonPropsWithChildren } from "../common/common.types";
 
@@ -10,7 +10,7 @@ import styles from "./Container.module.scss";
 const cx = classNames.bind(styles);
 
 function Container({ children }: commonPropsWithChildren<"form">) {
-	const [selector, setSelector] = useSelector();
+	// const [selector, setSelector] = useSelector();
 	return (
 		<form
 			className={cx("Container")}
